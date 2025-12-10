@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentatsioon</title>
+</head>
+<body>
+    <h1>Mis on Dokumentatsioon?</h1><br/>
+    <p>
+            Tarkvara arenduse elutsüklis on olemas erinevaid tegevusi, nende tegevuste tulemuste tulemusel tekib hulk artifakte<br/>
+            mis dokumenteerib nendes tegevustest kas siis tehtavaid tegevusi või tehtud tegevusi ja nende tegijaid.<br/>
+            Dokumentatsioon tekib peaaegu igas tarkvaraarenduse elutsükli etapis ja põhimõtteliselt igas tarkvara-<br/>
+            arendus elutsükli tüübis. Need artefaktid kokku moodustavadki Tarkvara dokumentatsiooni<br/>
+    </p><br/><br/>
+
+    <h1>Milliseid artefakte dokumentatsioonis esineda võib?</h1><br/>
+    <p>on olemas erinevaid tüüpe dokumentatsioone, aga tüüpiliselt esinevad vähemalt järgnevad:
+        <ul>
+            <li>Süsteemi nõuete dokument</li>
+            <li>Arhitektuurse disaini dokument</li>
+            <li>Kasutajajuhend</li>
+            <li>Projektihaldusdokumentatsioon</li>
+            <li>Süsteemi haldusjuhend</li>
+        </ul>
+    </p><br/><br/>
+
+    <h1>Mida need endast kujutavad ning mis on nende eesmärk?</h1>
+    <p>
+        <h2>Süsteemi nõuete dokument</h2>
+        <p>
+            Kujutab endast erinevates arendustsüklites oleva Analüüsietapi väljundit, kus pannakse paika<br/>
+            arendatava süsteemi erinevad nõuded koostöös lõppkasutajatega ning kliendiga. Arvestatakse mõlemi vajadusi<br/>
+            ning selgitatakse välja erinevad tõkendid.
+        </p><br/>
+        <p>
+            Dokumendi eesmärk on anda arendajaile Arhitektuurse disaini dokumeni loomise jaoks täpne sisend selle kohta<br/>
+            mida üldse arendama peab, selle abil kirjeldatakse juba süsteemselt arendajaile vajalik info.
+        </p><br/>
+        <h3>Mida süsteem nõete dokument endas sisaldama peab?</h3>
+        <p>
+            <ul>
+                <li>Sissejuhatus:</li>
+                <p>
+                    Kirjaldab ära dokumendi eesmärgi (Milleks ja kellele), Projekti ulatuse (Mida arendatakse, mida mitte),<br/>
+                    Terminite sõnastik, Viiteid teistele Dokumentidele.<br/>
+                </p><br/>
+                <li>Toote kirjeldus:<br/></li>
+                <p>
+                    Kirjeldab arendustööd ennast mida dokumendi abil arendama hakatakse/arendatakse<br/>
+                </p><br/>
+                <li>Erinevate osapoolte profiilid:</li><br/>
+                <p>
+                    Kirjeldatakse ära, mida tahab kasutaja teha, mida klient sellest saab, mis on nende erinevad vajadused<br/>
+                    kas neil on eelnevaid kogemusi sarnaste toodetega samast tootekategooriast. Näiteks rollipõhine tabel sotsiaalmeedia<br/>
+                    äpi jaoks:<br/>
+                    <table>
+                        <tr>
+                            <td>Roll</td>
+                            <td>Tegevused</td>
+                        </tr>
+                        <tr>
+                            <td>Külaline</td>
+                            <td>
+                                <ul>
+                                    <li>Vaadata pealehte</li>
+                                    <li>Registreerida kasutaja</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Registreerida kasutaja</td>
+                            <td>Kõik mis külaline</td>
+                                <ul>
+                                    <li>Teha postitusi</li>
+                                    <li>Laadida üles pilte</li>
+                                    <li>Vaadata postitusi</li>
+                                    <li>Saata teisetele kasutajatele sõnumeid</li>
+                                    <li>Kommenteerida postituste all</li>
+                                </ul>
+                        </tr>
+                        <tr>
+                            <td>Admin</td>
+                            <td>Kõik mis registreerunud kasutaja</td>
+                                <ul>
+                                    <li>Kasutajaid bännid</li>
+                                    <li>Postitusi kustutada</li>
+                                    <li>Kommentaare eemaldada</li>
+                                    <li>Pilte eemaldada</li>
+                                </ul>
+                        </tr>
+                        <tr>
+                            <td>Süsteemi administratoor</td>
+                            <td>Hoolitseb veebiäpi toimimise eest, haldab andmebaase, teeb korrastustöid vajadusel konfigureerib,<br/>
+                                ja jälgib muud statistikat et tagada kliendi ja kasutajate rahulolu.</td>
+                        </tr>
+                    </table>
+                    Profiilide detailne väljakirjeldamine aitab arendajail aru saada mis tegevusi neil teha vaja on, et tagada<br/>
+                    vastav funktsionaalsus lõpptootes.<br/>
+                </p><br/>
+                <li>Piirangud:</li><br/>
+                <p>
+                    Kirjeldatakse ära erinevad piirangud või tõkestavad aspektid, mis võivad arendusel ette tulla, kasutajatel endal olla,<br/>
+                    Keskkonnast kus toode toimima peab, arendusvahenditest tulnevad piirangud ja seaduslikud piirangud
+                </p><br/>
+                <li>Erinevad eeltingimused/sõltuvused:</li><br/>
+                <p>
+                    Toote loomist võib tingida mingisugune eelnev tingimus - viiakse sisse riigisüsteemis mingisugune muudatus, digitaalne<br/>
+                    vahend selle jaoks puudub, ning leitakse et on vaja arendada vastav töörist et tagada riigisüsteemi muudatuse ülalhoid.<br/> 
+                </p><br/>
+                <li>Käitluskeskkond:</li><br/>
+                <p>
+                    Kirjeldab ära keskkonna riistvaraliselt millel arendatud tarkvara toode toimima peab. See võib endas sisaldada erinevaid:<br/>
+                    <ul>
+                        <li>Operatsioonisüsteemid</li>
+                        <li>Muud tarkvaralised platvormid</li>
+                        <li>Ristvara (olgu siis kas kliendipoolne või lõppkasutajapoolne)</li>
+                        <li>Serverid</li>
+                        <li>Andmebaasid</li>
+                        <li>ja muud.</li>
+                    </ul>
+                </p><br/>
+                <li>Funktsionaalsete ja tehniliste nõuded:</li>
+                <p>
+                    Kirjeldab ära erinevaid funktsionaalsed nõued kasutajalugudena ning muud tehnilised<br/>
+                    nõuded arenduskekkonnas. Sisaldab ka endas erinevaid URL skeeme.
+                </p><br/>
+            </ul>
+        </p>
+    </p><br/><br/>
+
+    <h1>Mida need endast kujutavad ning mis on nende eesmärk?</h1><br/>
+    <p>
+        <h2>Süsteemi nõuete dokument</h2><br/>
+        <p></p>
+    </p><br/>
+    <p>
+        Dokumendi eesmärk on anda arendajaile Arhitektuurse disaini loomise jaoks sisend selle kohta<br/>
+        mida üldse arendama peab, selle abil kirjeldatakse juba süsteemselt arendajaile vajalik info.
+    </p><br/>
+    <h3>Mida süsteemi nõete dokument endas sisaldama peab?</h3><br/>
+    <p></p>
+    <h2>Arhitektuurse disaine dokument</h2><br/>
+    <p>
+        Kujutab endast arendatava toote või steemi sisemist ülesehitus.Kirjeldab ära ka selles süüsteemis esinevaid erinevaid<br/>
+        mooduleid, komponente ning muid sõltuvusi. Pannakse kirja ka kuidas need komponendid/moodulid omavahel suhtlevad ning süsteem<br/>
+        ise tervikuna suhtleb süsteemiväliste elementidega. Ära kirjeldatakseka Arhitektuur keskonnale kus ka kuidas valminud toode.<br/>
+    </p><br/>
+    <p>
+        Dokumendi eesmärk on tekitada arendajaile struktuur mida nad arendama hakkavad, see struktuur tuletatakse tarkvara<br/>
+        nõuete dokumendist.<br/>
+    </p><br/>
+    <h3>Mida arhitektuurse disainin dokument endas sisaldama peab?</h3>
+    <p>
+        <ul>
+            <li>Sissejuhatus:</li><br/>
+        </ul>
+        <p>
+            Kirjeldatakse ära dokumendi eesmärk viidatakse muudele dokumentidele ning omab sisukorda.
+        </p><br/>
+        <li>Arendusvahendid ja arenduskeskkond:</li><br/>
+        <p>
+            Kirjutatakse välja milliseid arendusvahendeid on otsutatud arendustööks rakendada. Kirjeldatakse ära ka nende seadistus<br/>
+            ja põhjendatakse ära miks justneed arendusvahendid valitud on. Kirjeldatakse samamoodi ära ka peale arendusvahendid<br/>
+            arenduskeskkond<br/>
+        </p><br/>
+        <li>Arendusstandardid:</li><br/>
+        <p>
+            On kokkuleppelised konventsioonid mida kogu arendusmeeskond jälgima peab, nendeks on:
+            <ul>
+                <li>Programeerimisstandard - Kas kirjutatakse koodis klassis erinevad moodulid, või tehakse igale<br/>
+                funktsioonile oma klass näiteks</li>
+                <li>Kommenteerimisstandard - Millises vormis ja kui palju koodi kommentaare kirjutakse.<br/>
+                Näitaks igal funktsioonil on oma summary ning kirjutatakse funktsioonid lahti kindal<br/>
+                keelelise süntaksiga</li>
+                <li>Nimetusstandart - Kuidas koodis kirjutatakse meetodite ja muutujate ning muude elementide nimetusi.<br/>
+                Näiteks: Meetodi kirjutakse nii, et mitmusõnalise metodi iga sõna esimene täht on suur<br>
+                aga muutuja nimes on iga esimene sõna väikese tähega. Antud juhul on meetodi</li>
+            </ul>
+        </p><br/>
+        <li>Süsteemidevaheline suhtlemine:</li><br/>
+        <p>
+            Kirjeldatakse ära teised, välised süsteemid ja kuidas nendega tarkvaratooe suhtlema peaks.<br/>
+            Sealhulgas ka mis kujul ja mis viisil need välised süsteemide infot vastu võtavad, ja tagasi annavad<br/>
+        </p><br/>
+        <li>Otsuste põhjendus:</li><br/>
+        <p>
+            Siin tuuakse välja, miks miski arhitektuuriotsus langetati, ehk miks just nii mitte naa. Pakutakse välja<br/>
+            ika olemasolevatele otsustele alternatiive juhuks kui esialgne plaan ei sobi või on tõkestatud.<br/>
+            Tuuakse välja ka nõuded mille põhjal erinevad otsused langetati, ehk mida see otsus lahendama peaks.<br/>
+        </p><br/>
+        <li>Jõudlusnõuded:</li>
+        <p>
+            Pannakse kirja tarkvaratootele kliendi poolt esitatud Jõudlusnõuded, näiteks: kui palju kasutajaid suudab<br/>
+            sotsiaalmeedia platvorm karraga hallata. Testimise käigus üritataksegi tetida arendusjärgus olevat toodet<br/>
+            simuleeritud koormusega. Kõik muud jõudlusnõuded peaksid olema ka testitavad sellisel viisil.<br/>
+        </p>
+        <li>lõppkasutajaga suhtlemine</li><br/>
+        <p>Kuidas programm väljendab oma funktsionaalsust lõppkasutajale, ning millisel viisil esitakse programmis<br/>
+        tekkinud vigu kasutajsle. Ehk teisisõnu on siin ka kasutajaliidese disain. Kasutajaliidese diasin võib olla<br/>
+        ka eraldi oma dokument</p><br/>
+        <li>Toote ressursinõuded:</li><br/>
+        <p>
+            Kirjeldab ära kui palju vajab arendatav toode erinevaid süsteemi raudvara ressursse nagu:<br/>
+            <ul>
+                <li>Mälu</li>
+                <li>Andmebaasimahtu</li>
+                <li>Võrgu </li>
+            </ul>
+        </p><br/>
+        <h3>Muudatuste tegemine</h3>
+        <p>
+            Kui klient otsustab, et nüüd on tarkvara dokumendis nõue vaja ringi teha, siis tuleb vastavad muudatused sisse<br/>
+            viia ka arhitektuurse disaini dokumenti. Sellel eesmärgil on mõlemas dokumendis nõuete ja arhitektuurielementide vahel ristviited<br/>
+            Kui on vaja näiteks sisselogimisfunktsiooni muuta, et nüüd klient tahab ka saada telefoninumbrit 2FA läbiviimiseks, siis on seal<br/>
+            nõude juures ka ristvaiide vastavalt programmi moodulile, mis haldab kasutaja sisselogimist. Sellele kasutajaloole lisatakse juurde<br/>
+            telefoninumbri küsimine<br/>
+        </p><br/>
+        <h2>Kasutajajuhend</h2><br/>
+        <p>
+            On dokument mis aitab lõppkasutajal kasutada ning navigeerida valminud tootes. Ta kirjeldab ära kidas erinevaid tegevusi sooritada,<br/>
+            milleks seda programmi kasutada saab, kuidas lahendada Korduma Kippuvaid Küsimusi ja muid võimalikke kasutaja tegevusi tagajärjel<br/>
+            tekkinud veaolekuid. Kasutajajuhend on kirjutatud selle põhjal mis on kasutajale näha ning saadaval, aga mitte käsitledes programmi.<br/>
+            siseseid detaile. Näiteks Monteerimisprogramm kirjeldab kasutajale kuidas muuta tööriist nähtavaks läbi "View > Window" menüü aga mitte<br/>
+            seda millest muutujat muuta vaja et kuvada see aken koodis.<br/>
+        </p><br/>
+        <h2>haldusjuhend</h2><br/>
+        <p>
+            haldusjuhend on dokument mille koostavad arendajad oma arendatava toote kohta potensiaalselt arendusega mittetegelevale isikule, aga<br/>
+            kes on kliendi palgal valminud süsteemi hoidamas. Dokument käsitleb:
+            <ul>
+                <li>Installatsiooni - kuidas süsteem kliendi raudvarale paigaldada mis vead võivad instalatsiooni käigus tekkitada ja<br/>
+                kuidas neid lahedada</li>
+                <li>Andmesiiret - kuidas süsteemi siirata kliendi poolt antud andmed minimaalselt tõrgeteta, üritades lahendada erinevaid<br/>
+                üleminekupuudusi. Näiteks andmebaasi migratsioonid</li>
+                <li>Hooldus - mis on tarkvaratootel vaja oma töö jätkuks ilma arendus meeskonna toeta.</li>
+                <li>Andministreerimine - kuidas klient oma rakenduses toimuvat jälgib ja kontrollib</li>
+                <li>Konfigureerimine - ümberseade võimaldab</li>
+            </ul>
+        </p>
+
+    </p>
+</body>
+</html>
