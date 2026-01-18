@@ -9,7 +9,7 @@ body {
   background-size: cover;
 
   color: black;
-  font-family: Arial, sans-serif;
+  font-family: "Zen Maru Gothic", Arial, sans-serif;
 }
 .content {
   background: rgba(255, 255, 255, 0.7);
@@ -17,4 +17,7 @@ body {
   border-radius: 10px;
   max-width: 900px;
   margin: 40px auto;
+}
+h1, h2 {
+  font-family: "Orbitron", sans-serif;
 }
