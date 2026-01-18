@@ -8,6 +8,13 @@ body {
   background: url("pildid/sky.jpg") no-repeat center center fixed;
   background-size: cover;
 
-  color: white;
+  color: black;
   font-family: Arial, sans-serif;
+}
+.content {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 40px auto;
 }
