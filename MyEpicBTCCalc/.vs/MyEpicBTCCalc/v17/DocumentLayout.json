@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\opilane\\source\\repos\\Tarkvara-arendusprotsess\\MyEpicBTCCalc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E86FEC5F-8C68-45E1-B457-E300A93BB8DE}|MyEpicBTCCalc\\MyEpicBTCCalc.csproj|c:\\users\\opilane\\source\\repos\\tarkvara-arendusprotsess\\myepicbtccalc\\myepicbtccalc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E86FEC5F-8C68-45E1-B457-E300A93BB8DE}|MyEpicBTCCalc\\MyEpicBTCCalc.csproj|solutionrelative:myepicbtccalc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E86FEC5F-8C68-45E1-B457-E300A93BB8DE}|MyEpicBTCCalc\\MyEpicBTCCalc.csproj|C:\\Users\\opilane\\source\\repos\\Tarkvara-arendusprotsess\\MyEpicBTCCalc\\myepicbtccalc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E86FEC5F-8C68-45E1-B457-E300A93BB8DE}|MyEpicBTCCalc\\MyEpicBTCCalc.csproj|solutionrelative:myepicbtccalc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E86FEC5F-8C68-45E1-B457-E300A93BB8DE}|MyEpicBTCCalc\\MyEpicBTCCalc.csproj|c:\\users\\opilane\\source\\repos\\tarkvara-arendusprotsess\\myepicbtccalc\\myepicbtccalc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E86FEC5F-8C68-45E1-B457-E300A93BB8DE}|MyEpicBTCCalc\\MyEpicBTCCalc.csproj|solutionrelative:myepicbtccalc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E86FEC5F-8C68-45E1-B457-E300A93BB8DE}|MyEpicBTCCalc\\MyEpicBTCCalc.csproj|c:\\users\\opilane\\source\\repos\\tarkvara-arendusprotsess\\myepicbtccalc\\myepicbtccalc\\bitcoinrates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,55 +22,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 408,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\Tarkvara-arendusprotsess\\MyEpicBTCCalc\\MyEpicBTCCalc\\Form1.cs",
-              "RelativeDocumentMoniker": "MyEpicBTCCalc\\Form1.cs",
-              "ToolTip": "C:\\Users\\opilane\\source\\repos\\Tarkvara-arendusprotsess\\MyEpicBTCCalc\\MyEpicBTCCalc\\Form1.cs [Design]",
-              "RelativeToolTip": "MyEpicBTCCalc\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T09:47:58.451Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\Tarkvara-arendusprotsess\\MyEpicBTCCalc\\MyEpicBTCCalc\\Form1.cs",
-              "RelativeDocumentMoniker": "MyEpicBTCCalc\\Form1.cs",
-              "ToolTip": "C:\\Users\\opilane\\source\\repos\\Tarkvara-arendusprotsess\\MyEpicBTCCalc\\MyEpicBTCCalc\\Form1.cs",
-              "RelativeToolTip": "MyEpicBTCCalc\\Form1.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowBMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T08:34:54.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BitcoinRates.cs",
-              "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\Tarkvara-arendusprotsess\\MyEpicBTCCalc\\MyEpicBTCCalc\\BitcoinRates.cs",
-              "RelativeDocumentMoniker": "MyEpicBTCCalc\\BitcoinRates.cs",
-              "ToolTip": "C:\\Users\\opilane\\source\\repos\\Tarkvara-arendusprotsess\\MyEpicBTCCalc\\MyEpicBTCCalc\\BitcoinRates.cs",
-              "RelativeToolTip": "MyEpicBTCCalc\\BitcoinRates.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA5wC0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T07:53:39.848Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 271,
-          "SelectedChildIndex": -1,
-          "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -110,6 +67,44 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\Tarkvara-arendusprotsess\\MyEpicBTCCalc\\MyEpicBTCCalc\\Form1.cs",
+              "RelativeDocumentMoniker": "MyEpicBTCCalc\\Form1.cs",
+              "ToolTip": "C:\\Users\\opilane\\source\\repos\\Tarkvara-arendusprotsess\\MyEpicBTCCalc\\MyEpicBTCCalc\\Form1.cs [Design]",
+              "RelativeToolTip": "MyEpicBTCCalc\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T09:47:58.451Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\Tarkvara-arendusprotsess\\MyEpicBTCCalc\\MyEpicBTCCalc\\Form1.cs",
+              "RelativeDocumentMoniker": "MyEpicBTCCalc\\Form1.cs",
+              "ToolTip": "C:\\Users\\opilane\\source\\repos\\Tarkvara-arendusprotsess\\MyEpicBTCCalc\\MyEpicBTCCalc\\Form1.cs",
+              "RelativeToolTip": "MyEpicBTCCalc\\Form1.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T08:34:54.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BitcoinRates.cs",
+              "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\Tarkvara-arendusprotsess\\MyEpicBTCCalc\\MyEpicBTCCalc\\BitcoinRates.cs",
+              "RelativeDocumentMoniker": "MyEpicBTCCalc\\BitcoinRates.cs",
+              "ToolTip": "C:\\Users\\opilane\\source\\repos\\Tarkvara-arendusprotsess\\MyEpicBTCCalc\\MyEpicBTCCalc\\BitcoinRates.cs",
+              "RelativeToolTip": "MyEpicBTCCalc\\BitcoinRates.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwC0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T07:53:39.848Z",
+              "EditorCaption": ""
             }
           ]
         },
