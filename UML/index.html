@@ -48,7 +48,94 @@
         </ul>
     </p>
     <h1>MõningaidUML liike</h1><br/>
+<<<<<<< HEAD
     <h2>Kasutuslooskeem</h2><br/>
+=======
+ <h2>Kasutuslooskeem</h2><br/>
+    <p>
+        Kasutuslooskeemid (Use Case Diagrams) on UML diagrammid, mis kirjeldavad süsteemi funktsionaalsust<br/>
+        kasutajate (actorite) vaatenurgast. Need diagrammid keskenduvad sellele, kuidas erinevad kasutajad<br/>
+        suhtlevad süsteemiga ja milliseid funktsioone süsteem pakub.<br/>
+        Kasutuslooskeemid koosnevad järgmistest põhielementidest:<br/>
+        <ul>
+            <li>Actorid: Need on välised osapooled, kes suhtlevad süsteemiga. Actorid võivad olla inimesed,<br/>
+            teised süsteemid või organisatsioonid.</li>
+            <li>Kasutuslood (Use Cases): Need on süsteemi funktsioonid või teenused, mida actorid kasutavad.<br/>
+            Iga kasutuslugu kirjeldab konkreetset tegevust või eesmärki, mida actor soovib saavutada.</li>
+            <li>Seosed: Need näitavad, kuidas actorid ja kasutuslood omavahel seotud on. Seosed võivad<br/>
+            olla lihtsad jooned, mis ühendavad actorit kasutuslooga.</li>
+        </ul>
+        Kasutuslooskeeme kasutatakse sageli süsteemi nõuete kogumisel ja analüüsimisel, kuna need aitavad<br/>
+        visualiseerida, kuidas erinevad kasutajad süsteemiga suhtlevad ja milliseid funktsioone nad vajavad.<br/>
+        Need diagrammid on kasulikud ka kommunikatsioonivahendina arendusmeeskonna ja sidusrühmade vahel.<br/>
+    </p>
+    <h2>Klassidiagramm</h2><br/>
+    <p>
+        Klassidiagrammid (Class Diagrams) on UML diagrammid, mis kirjeldavad süsteemi staatilist struktuuri<br/>
+        klasside ja nendevaheliste suhete kaudu. Need diagrammid keskenduvad sellele, kuidas objektid süsteemis<br/>
+        organiseeritud on ja millised omadused ning käitumised neil on.<br/>
+        Klassidiagrammid koosnevad järgmistest põhielementidest:<br/>
+        <ul>
+            <li>Klassid: Need on süsteemi põhielemendid, mis esindavad objektide tüüpe. Iga klass sisaldab<br/>
+            atribuute (omadused) ja meetodeid (käitumised).</li>
+            <li>Seosed: Need näitavad, kuidas klassid omavahel seotud on. Levinumad seosed hõlmavad<br/>
+            assotsiatsioone, pärilust, koostööd ja sõltuvusi.</li>
+            <li>Abstraktsed klassid ja liidesed: Abstraktsed klassid on klasse, mida ei saa otse instantsida,<br/>
+            vaid neid kasutatakse teiste klasside aluseks. Liidesed määratlevad meetodite kogumi, mida<br/>
+            klassid peavad rakendama.</li>
+        </ul>
+        Klassidiagramme kasutatakse sageli süsteemi arhitektuuri kavandamisel ja dokumenteerimisel, kuna<br/>
+        need aitavad visualiseerida objektide struktuuri ja nendevahelisi suhteid. Need diagrammid on kasulikud<br/>
+        ka arendusmeeskonna jaoks, et mõista süsteemi ülesehitust ja disaini.<br/>
+    </p>
+    <h2>Jadaskeem</h2><br/>
+    <p>
+        Jadaskeemid (Sequence Diagrams) on UML diagrammid, mis kirjeldavad objektidevahelist suhtlust aja jooksul.<br/>
+        Need diagrammid keskenduvad sellele, kuidas objektid omavahel sõnumeid vahetavad ja millises järjekorras<br/>
+        need sõnumid toimuvad.<br/>
+        Jadaskeemid koosnevad järgmistest põhielementidest:<br/>
+        <ul>
+            <li>Objektid: Need on süsteemi komponendid või instantsid, mis suhtlevad omavahel. Iga objekt on<br/>
+            esindatud ristkülikuna jadaskeemis.</li>
+            <li>Sõnumid: Need on suhtluse üksused, mis näitavad, kuidas objektid omavahel suhtlevad. Sõnumid<br/>
+            võivad olla sünkroonsed (ootavad vastust) või asünkroonsed (ei oota vastust).</li>
+            <li>Aja telg: Jadaskeemil on vertikaalne ajatelg, mis näitab sõnumite saatmise ja vastuvõtmise<br/>
+            ajakava.</li>
+        </ul>
+        Jadaskeeme kasutatakse sageli süsteemi dünaamilise käitumise modelleerimiseks ja dokumenteerimiseks,<br/>
+        kuna need aitavad visualiseerida, kuidas objektid omavahel suhtlevad aja jooksul. Need diagrammid on<br/>
+        kasulikud ka arendusmeeskonna jaoks, et mõista süsteemi töövoogu ja sõnumite vahetust.<br/>
+    </p>
+    <h2>Olekuskeem</h2><br/>
+     <p>
+        Olekuskeemid (State Diagrams) on UML diagrammid, mis kirjeldavad objekti või süsteemi olekuid<br/>
+        ja nende olekutevahelisi üleminekuid. Need diagrammid keskenduvad sellele, kuidas objekt reageerib<br/>
+        erinevatele sündmustele ja kuidas see mõjutab selle olekut.<br/>
+        Olekuskeemid koosnevad järgmistest põhielementidest:<br/>
+        <ul>
+            <li>Olekud: Need on objektide või süsteemi seisundid, mis kirjeldavad nende käitumist teatud<br/>
+            ajahetkel. Iga olek on esindatud ristkülikuna olekuskeemis.</li>
+            <li>Üleminekud: Need näitavad, kuidas objekt liigub ühest olekust teise vastuseks sündmustele.<br/>
+            Üleminekud on esindatud noolena, mis ühendab kahte olekut.</li>
+            <li>Sündmused: Need on välised või sisemised stiimulid, mis põhjustavad oleku muutumist.<br/>
+            Sündmused võivad olla kasutaja toimingud, süsteemi signaalid või muud tingimused.</li>
+        </ul>
+        Olekuskeeme kasutatakse sageli süsteemi käitumise modelleerimiseks ja dokumenteerimiseks, kuna need<br/>
+        aitavad visualiseerida, kuidas objektid reageerivad erinevatele sündmustele ja kuidas nende olekud muutuvad.<br/>
+        Need diagrammid on kasulikud ka arendusmeeskonna jaoks, et mõista süsteemi dünaamikat ja olekute haldamist.<br/>
+     </p>
+    <h2>paketiskeem</h2><br/>
+    <p>
+        Paketiskeemid (Package Diagrams) on UML diagrammid, mis kirjeldavad süsteemi pakettide struktuuri ja nendevahelisi seoseid.<br/>
+        Need diagrammid keskenduvad sellele, kuidas erinevad osad süsteemist on paketiteks jaotatud ning kuidas need paketid omavahel seotud on.<br/>
+        Paketiskeemid koosnevad järgmistest põhielementidest:<br/>
+        <ul>
+            <li>Paketid: Need on süsteemi komponendid, mis sisaldavad klasside ja teiste elementide gruppe. Iga pakett on esindatud ristkülikuna paketiskeemis.</li>
+            <li>Seosed: Need näitavad, kuidas paketid omavahel seotud on. Seosed võivad olla kasutusseos, pärilusseos või sõltuvus.</li>
+        </ul>
+        Paketiskeeme kasutatakse sageli süsteemi struktuuri modelleerimiseks ja dokumenteerimiseks, kuna need aitavad visualiseerida, kuidas objektid ja klassid on grupeeritud pakettidesse. Need diagrammid on kasulikud ka arendusmeeskonna jaoks, et mõista süsteemi struktuuri ja komponentide vahelist suhtlust.<br/>
+    </p>
+>>>>>>> f2796d0c36ce68d0a58c0fc87b8123894e8f9dbd
     <p>
         Kasutuslooskeemid (Use Case Diagrams) on UML diagrammid, mis kirjeldavad süsteemi funktsionaalsust<br/>
         kasutajate (actorite) vaatenurgast. Need diagrammid keskenduvad sellele, kuidas erinevad kasutajad<br/>

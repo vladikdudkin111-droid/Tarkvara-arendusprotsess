@@ -1,0 +1,23 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background: url("pildid/sky.jpg") no-repeat center center fixed;
+  background-size: cover;
+
+  color: black;
+  font-family: "Zen Maru Gothic", Arial, sans-serif;
+}
+.content {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+h1, h2 {
+  font-family: "Orbitron", sans-serif;
+}
