@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-shape</title>
+</head>
+<body>
+    
+    <h1>V-mudel: süsteemne arendusmetoodika</h1>
+
+<div class="note">
+    <strong>Mis on V-mudel?</strong><br>
+    V-mudel (V-shape model) on tarkvaraarenduse elutsükli mudel,
+    mis on kaskaadmudeli (Waterfall) edasiarendus.
+    Selle eripära seisneb selles, et igale arendusetapile
+    vastab kindel testimisetapp.
+    Protsess moodustab visuaalselt „V“-tähe kuju.
+</div>
+
+<h2>V-mudeli etapid</h2>
+<p>
+    V-mudel jaguneb kaheks peamiseks haruks:
+    vasakpoolne haru keskendub arendusele ja verifitseerimisele,
+    parempoolne testimisele ja valideerimisele.
+</p>
+
+<h3>1. Vasak haru: verifitseerimine (arendus)</h3>
+<ul>
+    <li>
+        <strong>Nõuete analüüs:</strong>
+        kogutakse süsteemi nõuded ja määratletakse
+        aktsepteerimistestimise kriteeriumid.
+    </li>
+    <li>
+        <strong>Süsteemidisain:</strong>
+        määratakse süsteemi arhitektuur
+        ning riist- ja tarkvaralised nõuded.
+    </li>
+    <li>
+        <strong>Arhitektuurne disain:</strong>
+        kirjeldatakse moodulite struktuur
+        ja nendevaheline suhtlus.
+    </li>
+    <li>
+        <strong>Moodulite disain:</strong>
+        koostatakse detailne plaan
+        iga üksiku komponendi jaoks.
+    </li>
+</ul>
+
+<h3>2. Põhietapp: kodeerimine</h3>
+<p>
+    V-mudeli alumises punktis toimub tegelik
+    tarkvara arendus vastavalt koostatud
+    disainidokumentidele.
+</p>
+
+<h3>3. Parem haru: valideerimine (testimine)</h3>
+<ul>
+    <li>
+        <strong>Ühiktestimine:</strong>
+        testitakse üksikuid mooduleid.
+    </li>
+    <li>
+        <strong>Integratsioonitestimine:</strong>
+        kontrollitakse moodulite omavahelist koostööd.
+    </li>
+    <li>
+        <strong>Süsteemitestimine:</strong>
+        hinnatakse kogu süsteemi toimimist tervikuna.
+    </li>
+    <li>
+        <strong>Aktsepteerimistestimine:</strong>
+        kinnitatakse vastavus algsetele
+        kasutaja nõuetele.
+    </li>
+</ul>
+
+<hr>
+
+<h2>Alamvariandid ja variatsioonid</h2>
+<p>
+    Klassikaline V-mudel on üsna jäik,
+    kuid praktikas kasutatakse ka mitmeid
+    kohandatud versioone:
+</p>
+
+<ul>
+    <li>
+        <strong>Dual Vee Model:</strong>
+        sobib keerukatele süsteemidele
+        mitme paralleelse arendustsükliga.
+    </li>
+    <li>
+        <strong>W-mudel:</strong>
+        testimine toimub täielikult
+        paralleelselt arendusega
+        alates nõuete kogumisest.
+    </li>
+    <li>
+        <strong>Iteratiivne V-mudel:</strong>
+        võimaldab V-mudelit rakendada
+        lühemates ja korduvates tsüklites.
+    </li>
+</ul>
+
+<hr>
+
+<h2>Arendusmudeli skeem</h2>
+<p>V-mudeli visuaalne kujutis:</p>
+<img src="../pildid/sdlc_v_model.jpg"
+     alt="V-mudeli arendus- ja testimistsükli skeem">
+
+<h2>Tähtsaim omadus: varajane testimise planeerimine</h2>
+<p>
+    V-mudeli keskne omadus on
+    <strong>testimise planeerimine juba varajases faasis</strong>.
+</p>
+
+<p>
+    Erinevalt kaskaadmudelist ei jäeta testimist projekti lõppu.
+    Testimisstrateegia ja testjuhud luuakse paralleelselt
+    arendusetappidega, mis võimaldab
+    vigu ja nõuete vastuolusid avastada varakult
+    ning vähendada paranduskulusid.
+</p>
+
+<h2>V-mudeli eelised ja puudused</h2>
+<table>
+    <tr>
+        <th>Eelised</th>
+        <th>Puudused</th>
+    </tr>
+    <tr>
+        <td>Selge struktuur ja lihtne projektijuhtimine</td>
+        <td>Väga piiratud paindlikkus muudatustele</td>
+    </tr>
+    <tr>
+        <td>Varajane testimine tagab kõrgema kvaliteedi</td>
+        <td>Töötav tarkvara valmib alles projekti lõpus</td>
+    </tr>
+    <tr>
+        <td>Vähendab vigade parandamise kulusid</td>
+        <td>Suur risk ebaselgete nõuete korral</td>
+    </tr>
+    <tr>
+        <td>Sobib turva- ja ohutuskriitilistele süsteemidele</td>
+        <td>Ei sobi dünaamilistele ja muutuvatele projektidele</td>
+    </tr>
+</table>
+
+<hr>
+
+<div class="note">
+    <h3>Kasutatud allikad</h3>
+    <ul>
+        <li><a href="https://www.geeksforgeeks.org/software-engineering/software-engineering-sdlc-v-model/"></a> </li>
+        <li><a href="https://www.tutorialspoint.com/sdlc/sdlc_v_model.htm"></a> </li>
+        </li>
+    </ul>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data driven development</title>
+</head>
+<body>
+    
+    <h1>Data Driven Development (DDD)</h1>
+
+<p>
+    <strong>Data Driven Development</strong> ehk andmetepõhine arendus on tarkvaraarenduse metoodika, kus otsuseid ja prioriteete ei määrata "kõhutunde" või hierarhia (nt juhtide arvamus) järgi, vaid reaalsete kvantitatiivsete ja kvalitatiivsete andmete põhjal.
+</p>
+<p>
+    Mudeli eesmärk on vähendada ebakindlust, valideerides hüpoteese võimalikult vara reaalsete kasutajate peal. DDD on tihedalt seotud <em>Lean Startup</em> ja <em>Agile</em> põhimõtetega.
+</p>
+
+<h2>Arendusmudeli etapid</h2>
+<p>DDD on tsükliline protsess. Tüüpilised sammud on järgmised:</p>
+<ul>
+    <li><strong>1. Eesmärgi seadmine ja hüpotees:</strong> Määratletakse, millist mõõdikut (KPI) parandada ja püstitatakse hüpotees, nt "Nupu värvi muutmine tõstab konversiooni 5%".</li>
+    <li><strong>2. Andmete kogumise planeerimine:</strong> Otsustatakse, milliseid andmeid on vaja hüpoteesi tõestamiseks ja kuidas neid koguda.</li>
+    <li><strong>3. Arendus (Build):</strong> Luuakse minimaalne vajalik funktsionaalsus (MVP) või muudatus.</li>
+    <li><strong>4. Mõõtmine (Measure):</strong> Funktsionaalsus lastakse kasutajateni ja kogutakse kasutusandmeid.</li>
+    <li><strong>5. Analüüs ja õppimine (Learn):</strong> Võrreldakse tulemusi eesmärgiga ja hinnatakse, kas hüpotees pidas paika.</li>
+    <li><strong>6. Otsustamine:</strong> Valitakse, kas jätkata samal teel (persevere), muuta suunda (pivot) või lahendus hüljata.</li>
+</ul>
+
+<h2>Alamvariandid ja seotud lähenemised</h2>
+<p>DDD on pigem katusmõiste või "mõtteviis", kuid selle all eksisteerivad spetsiifilisemad praktikad:</p>
+<ul>
+    <li><strong>Hypothesis-Driven Development (HDD):</strong> Väga teaduslik lähenemine, kus iga arendusülesanne sõnastatakse eksperimendina: <em>"Usume, et [tegevus] toob kaasa [tulemuse]. Teame, et see on tõsi, kui näeme [mõõdik]."</em></li>
+    <li><strong>A/B Testimine:</strong> Uusi lahendusi ei juurutata kõigile kasutajatele korraga; arendusprotsessi loomulik osa on pidev variantide võrdlemine kontrollgrupiga.</li>
+    <li><strong>Telemetry-First Development:</strong> DevOps-keskne variant, kus monitooring ja logimine ehitatakse süsteemi sisse enne äriloogikat, tagades kohese nähtavuse ja jälgitavuse (observability).</li>
+</ul>
+
+<div class="note">
+    <strong>Tähelepanu:</strong> Ära sega TDD-ga (Test Driven Development). TDD keskendub koodi tehnilisele testimisele, DDD aga toote ärilise väärtuse valideerimisele andmete põhjal.
+</div>
+
+<p>
+    Joonis illustreerib iteratiivsust: idee → arendus → andmete kogumine → õppimine ja uus idee.
+</p>
+
+<h2>Mudeli tähtsaim omadus</h2>
+<h3>Tagasiside ahel (Feedback Loop)</h3>
+<p>
+    Kõige kriitilisem omadus on <strong>lühike ja objektiivne tagasiside ahel</strong>.
+</p>
+<p>
+    <strong>Miks?</strong> Ilma kiire tagasisideta on andmete kogumine vaid "edevusmõõdik" (vanity metric). Mudeli väärtus seisneb selles, et arendustiim ei raiska aega funktsioonidele, mida keegi ei kasuta, võimaldades <em>fail fast</em> lähenemist.
+</p>
+
+<h2>Plussid ja miinused</h2>
+<table>
+    <tr>
+        <th>Plussid (Head)</th>
+        <th>Miinused / Riskid (Vead)</th>
+    </tr>
+    <tr>
+        <td><strong>Objektiivsus:</strong> Väldib isiklike arvamuste ja poliitika mõju otsustele.</td>
+        <td><strong>Analüüsi halvatus:</strong> Oht jääda andmeid analüüsima, otsuseid edasi lükates.</td>
+    </tr>
+    <tr>
+        <td><strong>Parem ROI:</strong> Ressurss suunatakse lahendustele, mis tegelikult toovad väärtust.</td>
+        <td><strong>Konteksti puudumine:</strong> Andmed näitavad "mis" juhtus, aga harva "miks". Võib tekkida eksitavaid järeldusi ilma kvalitatiivse uuringuta.</td>
+    </tr>
+    <tr>
+        <td><strong>Parem kasutajakogemus:</strong> Toodet arendatakse vastavalt sellele, kuidas inimesed seda tegelikult kasutavad.</td>
+        <td><strong>Lokaalne maksimum:</strong> Andmed võivad optimeerida olemasolevat lahendust, kuid ei pruugi viidata vajadusele radikaalse innovatsiooni järele.</td>
+    </tr>
+    <tr>
+        <td><strong>Riskide maandamine:</strong> Ebaõnnestunud ideed tuvastatakse enne suuremahulist investeeringut.</td>
+        <td><strong>Privaatsusprobleemid:</strong> Liigne andmete kogumine võib rikkuda GDPR-i või kasutajate usaldust.</td>
+    </tr>
+</table>
+
+<hr>
+
+<h3>Viited</h3>
+<ul>
+    <li><a href="https://www.thoughtworks.com/insights/articles/how-implement-hypothesis-driven-development"></a></li>
+</ul>
+
+</body>
+</html>

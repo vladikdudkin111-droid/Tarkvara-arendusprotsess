@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data oriented design</title>
+</head>
+<body>
+    
+    <h1>Data-Oriented Design (DOD)</h1>
+
+<p>
+    <strong>Data-Oriented Design</strong> ehk andmetele orienteeritud disain on tarkvaraarenduse paradigma, mis keskendub andmete paigutusele arvuti mälus, andmete lugemise mustritele ja riistvara (eriti CPU vahemälu) efektiivsele kasutamisele. Erinevalt objektorienteeritud programmeerimisest (OOP), mis modelleerib maailma "objektide" ja nende suhetena, käsitleb DOD maailma andmevoogudena, rõhutades jõudlust ja mälu efektiivsust.
+</p>
+
+<h2>Etapid ja põhimõtted</h2>
+<p>DOD ei ole rangelt defineeritud protsess nagu Waterfall, kuid rakendamisel järgitakse tavaliselt järgmisi mõttelisi etappe:</p>
+<ul>
+    <li><strong>1. Andmete analüüs (Data Analysis):</strong> Mõistetakse, milliseid andmeid tegelikult vajatakse ja kui tihti. Loobutakse terviklikust objektist ning keskendutakse ainult vajalikele atribuutidele (nt positsioon, kiirus, elu).</li>
+    <li><strong>2. Andmete paigutus (Data Layout):</strong> Andmete organiseerimine mälus viisil, mis minimeerib tühja ruumi ja maksimeerib järjestikust lugemist. Eesmärk on teha andmestruktuurid CPU-sõbralikuks, nt <em>Structure of Arrays (SoA)</em>.</li>
+    <li><strong>3. Transformatsioonide disain (Transformations):</strong> Funktsioonide või süsteemide loomine, mis võtavad hulga andmeid, töötlevad neid ja tagastavad uued andmed. Kood töötleb massiive, mitte üksikuid objekte.</li>
+</ul>
+
+<h2>Alamvariandid ja seotud mustrid</h2>
+<ul>
+    <li><strong>ECS (Entity Component System):</strong> Kõige tuntum DOD rakendus, eriti mänguarenduses. Jagab koodi kolmeks: <em>Entity</em> (ID), <em>Component</em> (puhtad andmed) ja <em>System</em> (loogika, mis töötleb komponente).</li>
+    <li><strong>Data-Driven Design:</strong> Sageli segatakse DOD-iga. See tähendab, et programmi loogikat juhitakse väliste andmete kaudu (nt skriptid, JSON), samas kui DOD keskendub mälu ja CPU efektiivsusele.</li>
+    <li><strong>SOA (Structure of Arrays):</strong> Spetsiifiline andmete hoidmise viis, mis on DOD alus (vastandina OOP <em>Array of Structures</em> lähenemisele).</li>
+</ul>
+
+<h2>Tähtsaim omadus ja miks</h2>
+<div class="note">
+    <h3>Cache Locality (Vahemälu lokaalsus)</h3>
+    <p>See on DOD kõige kriitilisem omadus. Tänapäeva protsessorid on sadu kordi kiiremad kui põhimälu (RAM). CPU veedab suure osa ajast andmeid oodates ("Von Neumann bottleneck").</p>
+    <p>DOD paigutab andmed nii, et ühe tüki lugemisel laetakse vahemällu ka järgmised vajalikud tükid. See vähendab <em>cache miss</em>-e ja tõstab jõudlust kordades.</p>
+</div>
+
+<h2>Plussid ja miinused</h2>
+<table>
+    <tr>
+        <th>Head (Pros)</th>
+        <th>Vead (Cons)</th>
+    </tr>
+    <tr>
+        <td><strong>Jõudlus:</strong> Maksimaalne riistvara ärakasutamine ja kiire andmetöötlus.</td>
+        <td><strong>Õppimiskõver:</strong> Raske arendajatele, kes on harjunud OOP-ga.</td>
+    </tr>
+    <tr>
+        <td><strong>Skaleeritavus:</strong> Lihtne töödelda suuri andmehulkasid korraga.</td>
+        <td><strong>Jäikus:</strong> Andmestruktuuride muutmine võib nõuda laialdast ümberkirjutamist.</td>
+    </tr>
+    <tr>
+        <td><strong>Paralleelsus:</strong> Eraldatud andmed ja minimaalsed sõltuvused lihtsustavad mitme tuuma kasutamist (multithreading).</td>
+        <td><strong>Koodi maht:</strong> Võib nõuda rohkem korduvat koodi ("boilerplate").</td>
+    </tr>
+    <tr>
+        <td><strong>Testitavus:</strong> Funktsioonid on sageli "puhtad" (sisend → väljund), mida on kerge testida.</td>
+        <td><strong>Intuitiivsus:</strong> Ei pruugi vastata sellele, kuidas inimesed maailma objektiivselt tajuvad.</td>
+    </tr>
+</table>
+
+<hr>
+
+<h3>Viited ja lisalugemine</h3>
+<a href="https://www.youtube.com/watch?v=rX0ItVEVjHc"></a>
+<a href="https://unity.com/dots"></a>
+
+</body>
+</html>

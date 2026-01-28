@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous test driven development</title>
+</head>
+<body>
+    
+    <h1>Continuous Test Driven Development (CTDD)</h1>
+
+<h2>Mis on CTDD?</h2>
+<p>
+    <strong>Continuous Test Driven Development (CTDD)</strong> ehk pidev testipõhine arendus ühendab kaks populaarset praktikat: 
+    <strong>TDD</strong> (Test Driven Development) ja <strong>CI</strong> (Continuous Integration).
+</p>
+<p>
+    Arendajad kirjutavad testid enne koodi (TDD), kuid CTDD lisab sellele pideva automaatse testimise. Iga kord, kui koodi muudetakse või salvestatakse, käivitatakse testid automaatselt. See võimaldab vigu tuvastada kohe, mitte alles hiljem testimisfaasis.
+</p>
+
+<hr>
+
+<h2>CTDD Etapid</h2>
+<p>CTDD järgib laiendatud TDD tsüklit ("Red-Green-Refactor"), millele on lisatud pidev integratsioon:</p>
+<ul>
+    <li><strong>1. Punane (Red):</strong> Kirjuta väike test, mis ebaõnnestub, kuna funktsionaalsust pole veel loodud.</li>
+    <li><strong>2. Roheline (Green):</strong> Kirjuta minimaalne kood, et test õnnestuks.</li>
+    <li><strong>3. Refaktoreeri (Refactor):</strong> Puhasta ja optimeeri koodi ilma selle käitumist muutmata.</li>
+    <li><strong>4. Pidev integratsioon (CI):</strong> Kood lükatakse repositooriumisse, kus CI-server (nt Jenkins, GitHub Actions) käivitab automaatselt kõik testid, et veenduda süsteemi terviklikkuses.</li>
+</ul>
+
+<h2>Seotud metoodikad</h2>
+<p>CTDD on TDD edasiarendus ja tihedalt seotud teiste testipõhiste metoodikatega:</p>
+<ul>
+    <li><strong>ATDD (Acceptance Test Driven Development):</strong> Keskendub ärinõuetele, kirjutades testid kliendi vaatepunktist enne koodi.</li>
+    <li><strong>BDD (Behavior Driven Development):</strong> Kirjeldab süsteemi käitumist inimkeeles ("Given-When-Then"), mis muudetakse automaattestideks.</li>
+</ul>
+
+<hr>
+
+<h2>Arendusmudeli joonis</h2>
+<p>CTDD tsükkel ühendab Red-Green-Refactor TDD mudeli ja pideva integratsiooni (CI):</p>
+
+<h2>Tähtsaim omadus</h2>
+<div class="note">
+    <h3>Kiire ja automaatne tagasiside</h3>
+    <p>
+        CTDD peamine eelis on <strong>tagasisideahela lühendamine</strong>.
+    </p>
+    <p>
+        <strong>Miks oluline?</strong> Traditsioonilises arenduses tuvastatakse vead alles tunde või päevi hiljem. CTDD puhul saab arendaja teada vea olemasolust sekunditega, hoides koodi kvaliteedi pidevalt kõrgena ja vähendades silumise (debug) aega.
+    </p>
+</div>
+
+<h2>Head ja Vead</h2>
+<table>
+    <tr>
+        <th>Omadus</th>
+        <th>Plussid</th>
+        <th>Miinused</th>
+    </tr>
+    <tr>
+        <td><strong>Kvaliteet</strong></td>
+        <td>Väga kõrge koodikvaliteet ja vähem vigu.</td>
+        <td>Nõuab distsipliini, et mitte kirjutada halbu teste valepositiivsete tulemustega.</td>
+    </tr>
+    <tr>
+        <td><strong>Dokumentatsioon</strong></td>
+        <td>Testid toimivad elava dokumentatsioonina, näidates täpselt, mida kood teeb.</td>
+        <td>Testide ja koodi sünkroonis hoidmine nõuab lisatööd.</td>
+    </tr>
+    <tr>
+        <td><strong>Kiirus</strong></td>
+        <td>Pikas perspektiivis säästab aega, sest debugimist on vähem.</td>
+        <td>Alguses aeglasem, kuna iga muudatus nõuab testi kirjutamist.</td>
+    </tr>
+    <tr>
+        <td><strong>Refaktoreerimine</strong></td>
+        <td>Võimaldab koodi muuta kartmata, et miski katki läheb.</td>
+        <td>Suure pärandkoodi puhul rakendamine keeruline.</td>
+    </tr>
+</table>
+
+<hr>
+
+<h2>Viited ja lisainfo</h2>
+<a href="https://www.agilealliance.org/glossary/atdd/"></a>
+<a href="https://martinfowler.com/bliki/TestDrivenDevelopment.html"></a>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specification by Example</title>
+</head>
+<body>
+    
+    <h1>Specification by Example (SbE)</h1>
+
+<div class="note">
+    <p><strong>Specification by Example (SbE)</strong> on koostööl põhinev lähenemine tarkvaranõuete ja äriliste testide määratlemiseks. Selle asemel, et kirjutada abstraktseid spetsifikatsioone, kasutatakse konkreetseid näiteid, et luua ühine arusaam arendajate, testijate ja äripoole vahel.</p>
+</div>
+
+<h2>Peamised etapid</h2>
+<p>SbE protsess on tsükliline. Gojko Adzici järgi kuuluvad peamised sammud:</p>
+<ul>
+    <li><strong>Eesmärkide seadmine:</strong> Määratletakse, miks me midagi teeme ja milline on äriline väärtus.</li>
+    <li><strong>Spetsifitseerimine (Collaborative Specification):</strong> "Three Amigos" (arendaja, testija, tooteomanik) arutavad nõudeid ja loovad konkreetseid näiteid.</li>
+    <li><strong>Illustreerimine:</strong> Näited kirjutatakse üles struktureeritud kujul (nt Gherkin keeles).</li>
+    <li><strong>Automatiseerimine:</strong> Näited seotakse koodiga ja muudetakse käivitatavateks testideks.</li>
+    <li><strong>Valideerimine:</strong> Testide käivitamine, et veenduda süsteemi vastavuses näidetele.</li>
+    <li><strong>Elav dokumentatsioon (Living Documentation):</strong> Edukalt läbitud testid muutuvad usaldusväärseks ja alati ajakohaseks dokumentatsiooniks.</li>
+</ul>
+
+<h2>Kas SbE on arendusmudel ja seotud metoodikad?</h2>
+<p>SbE on pigem <strong>praktika või metoodika</strong> kui täiemahuline arendusmudel (nagu Waterfall või Scrum). Samas integreerub see tihedalt Agile protsessidega. SbE kuulub laiemasse "testipõhiste arenduspraktikate" perre:</p>
+
+<h3>Alamvariandid ja seotud terminid:</h3>
+<ul>
+    <li><strong>ATDD (Acceptance Test-Driven Development):</strong> Väga sarnane SbE-le; keskendub vastuvõtutestide kirjutamisele enne koodi.</li>
+    <li><strong>BDD (Behavior-Driven Development):</strong> SbE edasiarendus, mis kirjeldab süsteemi käitumist inimkeeles ("Given-When-Then") ja muudetakse automaattestideks. BDD on sageli tehniline raamistik SbE rakendamiseks.</li>
+</ul>
+
+
+<h2>Tähtsaim omadus ja miks</h2>
+<div class="note">
+    <h3>Elav dokumentatsioon (Living Documentation)</h3>
+    <p><strong>Miks see oluline on?</strong> Traditsiooniline dokumentatsioon vananeb kohe, kui kood muutub. SbE puhul on dokumentatsiooniks automatiseeritud testid: kui testid ebaõnnestuvad, näitab süsteem, et dokumentatsioon on ajakohastamata. See tagab, et dokumentatsioon on alati tõene ja sünkroonis tegeliku süsteemiga (Single Source of Truth).</p>
+</div>
+
+<h2>Head ja vead (Plussid ja miinused)</h2>
+<table>
+    <tr>
+        <th>Omadus</th>
+        <th>Plussid (Head)</th>
+        <th>Miinused (Vead)</th>
+    </tr>
+    <tr>
+        <td><strong>Kommunikatsioon</strong></td>
+        <td>Vähendab arusaamatusi äri ja IT vahel; kõik räägivad sama keelt.</td>
+        <td>Nõuab kultuurilist muutust ja aktiivset osalust äripoolelt, mis võib olla keeruline.</td>
+    </tr>
+    <tr>
+        <td><strong>Kvaliteet</strong></td>
+        <td>Vähem vigu, kuna nõuded on selged ja testitud juba algusest peale.</td>
+        <td>Esialgne ajakulu on suurem, kuna analüüs toimub põhjalikumalt enne koodi kirjutamist.</td>
+    </tr>
+    <tr>
+        <td><strong>Hooldatavus</strong></td>
+        <td>Tekib elav dokumentatsioon, mis on alati ajakohane.</td>
+        <td>Suure hulga testide haldamine võib muutuda keeruliseks, kui neid ei refaktoreerita.</td>
+    </tr>
+    <tr>
+        <td><strong>Selgus</strong></td>
+        <td>Konkreetsed näited välistavad mitmeti mõistetavuse (nt "kiire" vs "vastab 200ms").</td>
+        <td>Liiga keeruliste ärireeglite korral võib näidete arv kasvada liiga suureks ja raskesti loetavaks.</td>
+    </tr>
+</table>
+
+<hr>
+
+<h3>Viited ja lisalugemist</h3>
+<a href="https://en.wikipedia.org/wiki/Specification_by_example"></a>
+
+</body>
+</html>

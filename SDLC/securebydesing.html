@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure by Design</title>
+</head>
+<body>
+    
+    <h1>Mis on Secure by Design?</h1>
+
+<p>
+    <strong>Secure by Design (SbD)</strong> on tarkvaraarenduse metoodika ja
+    mõtteviis, mille kohaselt turvalisus ei ole eraldi etapp arenduse lõpus,
+    vaid süsteemi loomulik ja lahutamatu osa juba esimestest planeerimisotsustest alates.
+</p>
+
+<div class="note">
+    <strong>Põhiidee:</strong>
+    selle asemel, et turvaauke hiljem parandada,
+    disainitakse süsteem nii, et teatud rünnakud oleksid
+    juba algselt võimatud või äärmiselt keerulised.
+</div>
+
+<h2>Secure by Design etapid</h2>
+<p>
+    Secure by Design järgib klassikalist tarkvaraarenduse elutsüklit (SDLC),
+    kuid igas faasis tehakse sihipäraseid turvategevusi:
+</p>
+
+<ul>
+    <li>
+        <strong>1. Nõuete analüüs (Requirements):</strong>
+        turvanõuete määratlemine, riskianalüüs ja regulatiivsete nõuete
+        (nt GDPR) kaardistamine.
+    </li>
+    <li>
+        <strong>2. Disain (Design):</strong>
+        süsteemi arhitektuuri loomine ja
+        <em>Threat Modeling</em> – võimalike rünnakustsenaariumite analüüs
+        enne koodi kirjutamist.
+    </li>
+    <li>
+        <strong>3. Arendus (Development):</strong>
+        turvalise koodi kirjutamine vastavalt
+        Secure Coding Guidelines’ile ning staatiline koodianalüüs (SAST).
+    </li>
+    <li>
+        <strong>4. Testimine (Verification):</strong>
+        dünaamiline analüüs (DAST), läbistustestimine (Pentesting)
+        ja haavatavuste skaneerimine.
+    </li>
+    <li>
+        <strong>5. Juurutamine ja hooldus (Release & Maintenance):</strong>
+        turvaline konfiguratsioon, intsidentidele reageerimise plaan
+        ja regulaarsete turvapaikade rakendamine.
+    </li>
+</ul>
+
+<h2>Alamvariandid ja seotud mudelid</h2>
+<p>
+    Secure by Design on pigem üldine põhimõte,
+    mida rakendatakse erinevate konkreetsete raamistikena:
+</p>
+<ul>
+    <li>
+        <strong>Microsoft SDL (Security Development Lifecycle):</strong>
+        formaliseeritud turvaraamistik, mida Microsoft kasutab oma toodetes.
+    </li>
+    <li>
+        <strong>DevSecOps:</strong>
+        turvalisuse automatiseeritud integreerimine CI/CD torudesse.
+    </li>
+    <li>
+        <strong>OWASP SAMM:</strong>
+        mudel organisatsiooni tarkvaraturbe küpsuse hindamiseks ja parendamiseks.
+    </li>
+</ul>
+
+<h2>Tähtsaim omadus</h2>
+<h3>Ennetamine ja „Shift Left“</h3>
+<p>
+    Secure by Design keskne põhimõte on turvalisuse
+    <strong>nihutamine protsessi algusesse</strong> (Shift Left).
+</p>
+
+<p><strong>Miks see on kriitiline?</strong></p>
+<ul>
+    <li>
+        <strong>Kulud:</strong>
+        uuringud näitavad, et disainifaasis leitud vea parandamine
+        on kordades odavam kui tootmiskeskkonnas.
+    </li>
+    <li>
+        <strong>Maine ja usaldus:</strong>
+        ennetamine aitab vältida andmelekkeid ja turvaintsidente,
+        mis võivad ettevõtte mainet tõsiselt kahjustada.
+    </li>
+</ul>
+
+<h2>Head ja vead</h2>
+<table>
+    <tr>
+        <th>Head (Pros)</th>
+        <th>Vead (Cons)</th>
+    </tr>
+    <tr>
+        <td>
+            <strong>Vähem turvaauke:</strong>
+            süsteem on vaikimisi turvalisem.
+        </td>
+        <td>
+            <strong>Ajakulu alguses:</strong>
+            ohumudeldamine ja analüüs nõuavad lisatööd.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Madalam kogukulu:</strong>
+            vähem hilisemaid parandusi ja trahviriske.
+        </td>
+        <td>
+            <strong>Koolitusvajadus:</strong>
+            arendajad peavad valdama turvalise koodi põhimõtteid.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Regulatsioonide järgimine:</strong>
+            lihtsam vastata standarditele (ISO 27001, GDPR).
+        </td>
+        <td>
+            <strong>Kultuuriline vastupanu:</strong>
+            turvalisust nähakse mõnikord arendust pidurdavana.
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+<h3>Viited ja lisalugemist</h3>
+<p>
+    Metoodika kirjeldus põhineb rahvusvahelistel
+    turvastandarditel ja organisatsioonide juhenditel:
+</p>
+<a href="https://owasp.org/www-project-samm/"</a>
+<a href="https://www.cisa.gov/securebydesign"</a>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain driven development</title>
+</head>
+<body>
+    
+    <h1>Domain-Driven Design (DDD)</h1>
+
+<div class="note">
+    <strong>Mis see on?</strong><br>
+    <strong>Domain-Driven Design (DDD)</strong> on tarkvaraarenduse lähenemine,
+    mis keskendub keerukate infosüsteemide loomisele,
+    sidudes tarkvara struktuuri tihedalt äridomeeni loogikaga.
+    Eesmärk on, et kood peegeldaks võimalikult täpselt
+    päriselu äriprotsesse ja -mõisteid.
+</div>
+
+<h2>DDD põhietapid</h2>
+<p>
+    DDD ei ole lineaarne arendusprotsess,
+    vaid jaguneb kaheks täiendavaks disainitasandiks:
+</p>
+
+<h3>1. Strateegiline disain (Strategic Design)</h3>
+<p>
+    Keskendub süsteemi üldisele struktuurile ja piiride määratlemisele.
+</p>
+<ul>
+    <li>
+        <strong>Ubiquitous Language (Ühtne keel):</strong>
+        ühine terminoloogia, mida kasutavad nii arendajad
+        kui ka ärieksperdid.
+    </li>
+    <li>
+        <strong>Bounded Context:</strong>
+        süsteemi jaotamine selgeteks kontekstideks,
+        kus mõistetel on üheselt mõistetav tähendus.
+    </li>
+</ul>
+
+<h3>2. Taktikaline disain (Tactical Design)</h3>
+<p>
+    Keskendub äriloogika tehnilisele realiseerimisele koodis.
+</p>
+<ul>
+    <li>
+        <strong>Entities ja Value Objects:</strong>
+        ärimudeli objektide modelleerimine.
+    </li>
+    <li>
+        <strong>Aggregates:</strong>
+        objektide grupeerimine andmete terviklikkuse tagamiseks.
+    </li>
+    <li>
+        <strong>Repositories:</strong>
+        äriloogika eraldamine andmete salvestamisest.
+    </li>
+</ul>
+
+<hr>
+
+<h2>Seotud alamvariandid ja arhitektuurid</h2>
+<p>
+    DDD-d kasutatakse sageli koos järgmiste mustritega:
+</p>
+<ul>
+    <li>
+        <strong>CQRS:</strong>
+        käskude ja päringute eraldamine parema skaleeritavuse saavutamiseks.
+    </li>
+    <li>
+        <strong>Event Sourcing:</strong>
+        süsteemi oleku kirjeldamine sündmuste jadana.
+    </li>
+    <li>
+        <strong>Hexagonal Architecture (Ports & Adapters):</strong>
+        äriloogika isoleerimine tehnilistest detailidest.
+    </li>
+</ul>
+
+<h2>Tähtsaim omadus: ühtne keel</h2>
+<p>
+    <strong>Ubiquitous Language</strong> on DDD keskne põhimõte.
+    Kui äri ja kood kasutavad erinevaid mõisteid,
+    tekivad paratamatult vead ja arusaamatused.
+</p>
+
+<div class="note">
+    <strong>Näide:</strong>
+    Kui äripoole termin on „kaup on teele pandud”,
+    peab ka kood seda väljendama selgelt,
+    näiteks <code>shipment.dispatch()</code>,
+    mitte abstraktse staatuse numbrina.
+</div>
+
+<h2>Eelised ja puudused</h2>
+<table>
+    <tr>
+        <th>Valdkond</th>
+        <th>Eelised</th>
+        <th>Puudused</th>
+    </tr>
+    <tr>
+        <td><strong>Äriloogika</strong></td>
+        <td>Tarkvara vastab täpselt ärivajadustele</td>
+        <td>Nõuab tihedat koostööd äriekspertidega</td>
+    </tr>
+    <tr>
+        <td><strong>Hooldatavus</strong></td>
+        <td>Selge struktuur ja ohutumad muudatused</td>
+        <td>Aeglasem algfaas</td>
+    </tr>
+    <tr>
+        <td><strong>Sobivus</strong></td>
+        <td>Ideaalne suurtele ja pikaajalistele süsteemidele</td>
+        <td>Liiga keerukas väikeste projektide jaoks</td>
+    </tr>
+</table>
+
+<hr>
+
+<h3>Allikad ja lisalugemine</h3>
+<ul>
+        <a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs"></a>
+        <a href="https://martinfowler.com/tags/domain%20driven%20design.html"></a>
+</ul>
+
+</body>
+</html>

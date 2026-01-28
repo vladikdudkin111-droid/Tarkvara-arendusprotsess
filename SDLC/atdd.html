@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceptance test driven development</title>
+</head>
+<body>
+    
+    <h1>Mis on Acceptance Test Driven Development (ATDD)?</h1>
+
+<p>
+    <strong>Acceptance Test Driven Development</strong> (ATDD) ehk vastuvõtutestidel põhinev arendus on metoodika,
+    kus "kolm sõpra" (<em>The Three Amigos</em>) – <strong>arendaja, testija ja tooteomanik/äriklient</strong> –
+    koostavad enne koodi kirjutamist ühiselt vastuvõtutestid.
+</p>
+<p>
+    Need testid määratlevad täpselt, mida süsteem peab tegema, et funktsionaalsust pidada valmis olevaks.
+    Erinevalt TDD-st, mis keskendub koodi tehnilisele õigsusele ja ühiktestidele, keskendub ATDD
+    <strong>süsteemi käitumisele ja ärilistele nõuetele</strong>.
+</p>
+
+<div class="note">
+    <strong>Põhimõte:</strong> Koodi ei kirjutata enne, kui olemas on ebaõnnestuv vastuvõtutest, mis kirjeldab soovitud ärifunktsionaalsust.
+</div>
+
+<h2>ATDD Etapid (4 D-d)</h2>
+<p>ATDD protsess jaguneb tavaliselt neljaks sammuks:</p>
+
+<ul>
+    <li><strong>1. Arutelu (Discuss):</strong> Meeskond arutab kasutajaloo (User Story) ja määratleb, mida ehitada.</li>
+    <li><strong>2. Täpsustamine (Distill):</strong> Arutelu tulemused vormistatakse konkreetseteks aktsepteerimiskriteeriumiteks (testideks), sageli masinloetavas vormis (nt Gherkin).</li>
+    <li><strong>3. Arendus (Develop):</strong> Arendajad kirjutavad koodi ja ühikteste (TDD), kuni vastuvõtutestid läbivad.</li>
+    <li><strong>4. Esitlus (Demo):</strong> Töötavat lahendust demonstreeritakse huvigruppidele ning viiakse läbi uuriv testimine.</li>
+</ul>
+
+<h2>Seotud metoodikad</h2>
+<p>
+    ATDD on lai mõiste ja kattub mõnevõrra teiste lähenemistega:
+</p>
+<ul>
+    <li><strong>BDD (Behavior Driven Development):</strong> Sarnane ATDD-le, kuid keskendub ühist keelt kasutades süsteemi käitumise kirjeldamisele (nt "Given–When–Then").</li>
+    <li><strong>SBE (Specification by Example):</strong> Nõuete defineerimine konkreetsete näidete abil, mis hiljem muutuvad testideks.</li>
+</ul>
+
+<h2>Arendusmudeli joonis</h2>
+<p>ATDD tsükkel on iteratiivne ja visuaalselt kujutatakse seda järgmiselt:</p>
+
+<h2>Tähtsaim omadus</h2>
+<h3>Koostöö ja ühine arusaam</h3>
+<p>
+    ATDD keskne väärtus on <strong>suhtlus ja ühine arusaam</strong>.
+</p>
+<p>
+    <strong>Miks?</strong> Suurim probleem tarkvaraarenduses on "vale asja ehitamine".
+    Kui arendaja mõistab nõuet valesti, on hilisem parandamine kordades kallim.
+    ATDD sunnib äripoole ja arendajad enne esimest koodirida kokku leppima selged aktsepteerimiskriteeriumid.
+</p>
+
+<h2>Head ja vead</h2>
+<table>
+    <tr>
+        <th>Omadus</th>
+        <th>Plussid</th>
+        <th>Miinused</th>
+    </tr>
+    <tr>
+        <td><strong>Kvaliteet</strong></td>
+        <td>Vähendab defekte ja ümbertegemise vajadust, sest nõuded on selged.</td>
+        <td>Alguses võib tunduda aeglane, kuna koodi ei toodeta kohe.</td>
+    </tr>
+    <tr>
+        <td><strong>Dokumentatsioon</strong></td>
+        <td>Testid toimivad kui ajakohane "elav dokumentatsioon".</td>
+        <td>Nõuab distsipliini ja aega, et hoida dokumentatsioon korras.</td>
+    </tr>
+    <tr>
+        <td><strong>Koostöö</strong></td>
+        <td>Parandab suhtlust arendajate, testijate ja äripoole vahel.</td>
+        <td>Nõuab kultuurilist muutust ja aktiivset panust kõigilt osapooltelt.</td>
+    </tr>
+    <tr>
+        <td><strong>Hooldus</strong></td>
+        <td>Lihtsustab koodi muutmist (regression testing automaatne).</td>
+        <td>Halvasti kirjutatud testid võivad muutuda rabedaks ja vajada pidevat korrigeerimist.</td>
+    </tr>
+</table>
+
+<hr>
+
+<h2>Viited ja lisamaterjalid</h2>
+<a href="https://www.agilealliance.org/glossary/atdd/"></a>
+<a href="https://cucumber.io/docs/bdd/" ></a>
+</body>
+</html>
